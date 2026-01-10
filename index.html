@@ -3,170 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bishal A. - Computer Engineer specializing in Mobile App Development">
-    <title>Bishal A. - Portfolio</title>
+    <meta name="description" content="Bishal Aryal - Computer Engineer & Full Stack Developer Portfolio">
+    <title>Bishal Aryal - Computer Engineer | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="header-content">
-            <div class="profile-header">
-                <img src="https://via.placeholder.com/64/14a800/ffffff?text=BA" alt="Bishal A." class="profile-img">
-                <div class="profile-info">
-                    <h1 class="profile-name">
-                        Bishal A.
-                        <span class="verified-badge">✓</span>
-                    </h1>
-                    <p class="profile-location">
-                        <span class="location-icon">📍</span>
-                        Bhaktapur, Nepal
-                    </p>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Bishal Aryal</a>
             </div>
-            <button class="share-btn">
-                <span>Share</span>
-                <span class="share-icon">↗</span>
-            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Left Sidebar -->
-        <aside class="sidebar">
-            <!-- View Profile Section -->
-            <section class="sidebar-section">
-                <h2 class="sidebar-title">View profile</h2>
-                <p class="sidebar-subtitle">Mobile App Development</p>
-                <div class="filter-box">
-                    <span class="filter-text">All work</span>
-                    <span class="filter-arrow">→</span>
-                </div>
-            </section>
-
-            <!-- Ready to Work Section -->
-            <section class="sidebar-section">
-                <h2 class="sidebar-title">Ready to work with Bishal A.?</h2>
-                <button class="signup-btn">Sign up</button>
-                <p class="login-text">
-                    Already have an account? <a href="#" class="login-link">Log in</a>
-                </p>
-            </section>
-
-            <!-- Hours per Week Section -->
-            <section class="sidebar-section">
-                <h2 class="sidebar-title">Hours per week</h2>
-                <p class="hours-text">Less than 30 hrs/week</p>
-                <p class="contract-text">
-                    Open to contract to hire
-                    <span class="new-badge">New</span>
-                </p>
-            </section>
-
-            <!-- Linked Accounts Section -->
-            <section class="sidebar-section">
-                <h2 class="sidebar-title">Linked accounts</h2>
-                
-                <div class="linked-account">
-                    <div class="account-header">
-                        <div class="account-icon github-icon">🐙</div>
-                        <div class="account-info">
-                            <p class="account-since">Since 2022</p>
-                            <p class="account-name">Bishal Aryal</p>
-                        </div>
-                    </div>
-                    <a href="#" class="account-link">View profile →</a>
-                    <p class="account-followers">
-                        <span class="followers-icon">👥</span>
-                        4 followers
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Bishal Aryal</h1>
+                    <h2 class="hero-title">Computer Engineer & Full Stack Developer</h2>
+                    <p class="hero-description">
+                        Passionate about building innovative mobile applications and web solutions. 
+                        Transforming ideas into reality with modern technologies and clean code.
                     </p>
-                </div>
-
-                <div class="linked-account">
-                    <div class="account-header">
-                        <div class="account-icon stackoverflow-icon">SO</div>
-                        <div class="account-info">
-                            <p class="account-name">Bishal Aryal</p>
-                        </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
-                    <a href="#" class="account-link">View profile →</a>
+                    <div class="hero-social">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://stackoverflow.com" target="_blank" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+                        <a href="mailto:aryalbishal48@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
-            </section>
-        </aside>
-
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Professional Title & Rate -->
-            <div class="title-section">
-                <h1 class="professional-title">Computer Engineer</h1>
-                <p class="hourly-rate">$10.00/hr</p>
+                <div class="hero-image">
+                    <div class="profile-image-wrapper">
+                        <img src="https://via.placeholder.com/400/2563eb/ffffff?text=BA" alt="Bishal Aryal" class="profile-image">
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <!-- About Section -->
-            <section class="content-section">
-                <p class="about-text">
-                    I'm a Mobile App Developer and AI-driven product builder, passionate about helping individuals, startups, and businesses bring their ideas to life through innovative mobile solutions.
-                </p>
-                <p class="about-text">
-                    <strong>What I can offer you:</strong>
-                </p>
-                <ul class="offer-list">
-                    <li>Custom Mobile App Development (Android & iOS)</li>
-                    <li>Product Development From Idea to Launch</li>
-                    <li>Backend & API Development</li>
-                    <li>AI & Automation Features</li>
-                    <li>App Improvement & Bug Fixing</li>
-                    <li>Business-Focused App Solutions</li>
-                </ul>
-                <p class="about-text">
-                    <strong>In short:</strong> I help transform your ideas into real, polished, functional mobile applications with modern technologies, clean code, and a strong user experience.
-                </p>
-            </section>
-
-            <!-- Portfolio Section -->
-            <section class="content-section">
-                <h2 class="section-title">Portfolio</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <div class="portfolio-images">
-                            <img src="https://via.placeholder.com/150/2d2d2d/ffffff?text=Synk+1" alt="Synk App Screenshot 1" class="portfolio-img">
-                            <img src="https://via.placeholder.com/150/2d2d2d/ffffff?text=Synk+2" alt="Synk App Screenshot 2" class="portfolio-img">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Engineer and Full Stack Developer with a passion for creating innovative 
+                        mobile applications and web solutions. I specialize in building scalable, user-friendly 
+                        applications using modern technologies.
+                    </p>
+                    <p>
+                        My expertise includes mobile app development (Android & iOS), backend development, API design, 
+                        and cloud services integration. I'm dedicated to writing clean, maintainable code and 
+                        delivering solutions that make a real impact.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">Bishal Aryal</span>
                         </div>
-                        <p class="portfolio-name">Synk (event management)</p>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="portfolio-images">
-                            <img src="https://via.placeholder.com/150/2d2d2d/ffffff?text=Scribe+1" alt="Scribe App Screenshot 1" class="portfolio-img">
-                            <img src="https://via.placeholder.com/150/2d2d2d/ffffff?text=Scribe+2" alt="Scribe App Screenshot 2" class="portfolio-img">
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value"><a href="mailto:aryalbishal48@gmail.com">aryalbishal48@gmail.com</a></span>
                         </div>
-                        <p class="portfolio-name">Scribe - Fitness Trainer & Client Application</p>
+                        <div class="info-item">
+                            <span class="info-label">Phone:</span>
+                            <span class="info-value"><a href="tel:9866692573">+977 9866692573</a></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Syangja, Nepal</span>
+                        </div>
                     </div>
-                    <div class="portfolio-cta">
-                        <p class="cta-text">Want to see more?</p>
-                        <button class="cta-signup-btn">Sign up</button>
+                    <a href="cv and image/bishal aryal.pdf" download class="btn btn-primary">Download CV</a>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Technologies</div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!-- Skills Section -->
-            <section class="content-section">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills-container">
-                    <span class="skill-tag">Mobile App</span>
-                    <span class="skill-tag skill-tag-highlight">Firebase</span>
-                    <span class="skill-tag">Supabase</span>
-                    <span class="skill-tag skill-tag-highlight">Laravel</span>
-                    <span class="skill-tag skill-tag-highlight">Amazon S3</span>
-                    <span class="skill-tag skill-tag-highlight">Stripe</span>
-                    <span class="skill-tag">Flutter</span>
-                    <span class="skill-tag">Dart</span>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/2d2d2d/ffffff?text=Synk+Event+Management" alt="Synk Project">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View Synk Project"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Synk - Event Management</h3>
+                        <p class="project-description">
+                            A comprehensive event management mobile application built with Flutter. 
+                            Features include event creation, ticket booking, notifications, and real-time updates.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Dart</span>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
-    </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/2d2d2d/ffffff?text=Scribe+Fitness+App" alt="Scribe Project">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View Scribe Project"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Scribe - Fitness Trainer & Client App</h3>
+                        <p class="project-description">
+                            A dual-platform mobile application connecting fitness trainers with clients. 
+                            Includes workout plans, progress tracking, messaging, and payment integration.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Stripe</span>
+                            <span class="tech-tag">Amazon S3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="category-title">Frontend Development</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">Mobile Development</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Dart</span>
+                        <span class="skill-tag">Android</span>
+                        <span class="skill-tag">iOS</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">Backend & Services</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Supabase</span>
+                        <span class="skill-tag">Amazon S3</span>
+                        <span class="skill-tag">Stripe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">
+                        I'm always open to discussing new projects, creative ideas, or opportunities 
+                        to be part of your visions. Feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:aryalbishal48@gmail.com">aryalbishal48@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:9866692573">+977 9866692573</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Syangja, Nepal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://stackoverflow.com" target="_blank" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Bishal Aryal. All rights reserved.</p>
+            <p>Designed & Developed with <i class="fas fa-heart"></i> by Bishal Aryal</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
