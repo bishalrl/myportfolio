@@ -371,7 +371,7 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
 }
 
@@ -454,10 +454,28 @@ section {
     color: var(--text-primary);
 }
 
+.project-role {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
 .project-description {
     color: var(--text-secondary);
     margin-bottom: 1rem;
     line-height: 1.6;
+}
+
+.project-outcome {
+    background: var(--bg-light);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    border-left: 4px solid var(--secondary-color);
 }
 
 .project-tech {
@@ -473,6 +491,42 @@ section {
     border-radius: 20px;
     font-size: 0.875rem;
     font-weight: 500;
+}
+
+/* Projects Note Section */
+.projects-note {
+    margin-top: 3rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+}
+
+.projects-note h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.projects-note ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.projects-note li {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    line-height: 1.6;
+}
+
+.projects-note li strong {
+    color: var(--secondary-color);
 }
 
 /* Skills Section */
