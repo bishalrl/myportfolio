@@ -1,20 +1,21 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/',
+  base: './',
   publicDir: 'public',
   server: {
     port: 3001,
     host: true,
     watch: {
-      ignored: ['**/cv and image/**', '**/dist/**'],
+      ignored: ['**/cv and image/**', '**/dist/**', '**/docs/**'],
     },
   },
   preview: {
     port: 4173,
   },
   build: {
-    outDir: 'dist',
+    outDir: 'docs',
+    emptyOutDir: true,
     assetsInlineLimit: 0,
     sourcemap: false,
     rollupOptions: {

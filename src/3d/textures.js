@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 
-const BASE = import.meta.env.BASE_URL;
+const BASE = import.meta.env?.BASE_URL || './';
 
 function roundRect(ctx, x, y, w, h, r) {
   const radius = Math.min(r, w / 2, h / 2);

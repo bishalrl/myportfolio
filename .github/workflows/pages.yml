@@ -1,17 +1,17 @@
-name: Deploy GitHub Pages
+name: Build static GitHub Pages
 
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'docs/**'
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: pages
+  group: pages-docs
   cancel-in-progress: true
 
 jobs:
@@ -25,16 +25,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
+      - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          path: dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          commit_message: Rebuild static GitHub Pages site
+          file_pattern: docs/
