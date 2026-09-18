@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Bishal Aryal - Flutter Developer & Mobile App Architect Portfolio" />
     <title>Bishal Aryal — Flutter Developer | 3D Portfolio</title>
+    <style>
+      html, body { margin: 0; background: #07080c; color: #eef2ff; font-family: Inter, system-ui, sans-serif; }
+      .loader.is-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./docs/assets/index.css" />
   </head>
   <body>
     <div class="loader">
@@ -280,6 +286,13 @@
       </footer>
     </main>
 
-    <script type="module" src="/src/main.js"></script>
+    <script>
+      setTimeout(function () {
+        document.body.classList.add('is-ready');
+        var loader = document.querySelector('.loader');
+        if (loader) loader.classList.add('is-hidden');
+      }, 8000);
+    </script>
+    <script type="module" src="./docs/assets/app.js"></script>
   </body>
 </html>
