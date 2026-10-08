@@ -40,7 +40,7 @@ export class Experience {
       stencil: false,
       depth: true,
     });
-    this.renderer.setClearColor(0x07080c, 1);
+    this.renderer.setClearColor(0x1a2468, 1);
     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
     this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
     this.renderer.toneMappingExposure = 1.08;

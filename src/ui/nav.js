@@ -11,7 +11,7 @@ export function setupNav(lenis) {
   const scrollToId = (id) => {
     const target = document.querySelector(id);
     if (!target) return;
-    const top = target.offsetTop - 12;
+    const top = Math.max(0, target.offsetTop - 24);
     if (lenis) lenis.scrollTo(top, { duration: 1.15 });
     else window.scrollTo({ top, behavior: 'smooth' });
   };

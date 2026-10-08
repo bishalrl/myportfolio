@@ -3,8 +3,8 @@ import { Reflector } from 'three/addons/objects/Reflector.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 
 export function createStudio(scene, renderer, { lowPower = false } = {}) {
-  scene.background = new THREE.Color(0x07080c);
-  scene.fog = new THREE.Fog(0x07080c, 14, 42);
+  scene.background = new THREE.Color(0x1a2468);
+  scene.fog = new THREE.Fog(0x24357a, 14, 42);
 
   const pmrem = new THREE.PMREMGenerator(renderer);
   const env = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
@@ -16,7 +16,7 @@ export function createStudio(scene, renderer, { lowPower = false } = {}) {
   studio.name = 'studio';
 
   const floorMat = new THREE.MeshStandardMaterial({
-    color: 0x0c1018,
+    color: 0x24357a,
     metalness: 0.55,
     roughness: 0.28,
   });
@@ -30,7 +30,7 @@ export function createStudio(scene, renderer, { lowPower = false } = {}) {
     const reflector = new Reflector(new THREE.PlaneGeometry(48, 72), {
       textureWidth: 1024,
       textureHeight: 1024,
-      color: 0x151820,
+      color: 0x3146a0,
     });
     reflector.rotation.x = -Math.PI / 2;
     reflector.position.set(3, 0.01, -18);
@@ -54,7 +54,7 @@ export function createStudio(scene, renderer, { lowPower = false } = {}) {
     studio.add(strip);
   }
 
-  const hemi = new THREE.HemisphereLight(0x94a3b8, 0x020617, 0.45);
+  const hemi = new THREE.HemisphereLight(0x93c5fd, 0x312e81, 0.7);
   studio.add(hemi);
 
   const key = new THREE.DirectionalLight(0xf8fafc, 1.15);

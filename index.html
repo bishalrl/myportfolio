@@ -3,296 +3,287 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bishal Aryal - Flutter Developer & Mobile App Architect Portfolio" />
-    <title>Bishal Aryal — Flutter Developer | 3D Portfolio</title>
+    <meta name="description" content="Bishal Aryal — Flutter developer in Syangja, Nepal. Production apps for iOS and Android." />
+    <title>Bishal Aryal — Flutter Developer</title>
     <style>
-      html, body { margin: 0; background: #07080c; color: #eef2ff; font-family: Inter, system-ui, sans-serif; }
-      .loader.is-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+      html, body { margin: 0; background: #f3ecdf; color: #1c2430; }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,560;0,9..144,680;1,9..144,560;1,9..144,650&family=Outfit:wght@400;500;600&family=Tiro+Devanagari:ital@0;1&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./src/style.css" />
-    <link rel="stylesheet" href="./docs/assets/index.css" />
   </head>
   <body>
-    <div class="loader">
-      <div class="loader-inner">
-        <p>Entering studio</p>
-        <div class="loader-bar"><span></span></div>
-      </div>
-    </div>
+    <header class="navbar">
+      <a class="mark" href="#home" aria-label="Bishal Aryal, home">BA</a>
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <a class="talk btn" href="#contact">Let's talk</a>
+      <button class="hamburger" type="button" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
 
-    <canvas id="webgl" aria-hidden="true"></canvas>
-
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-logo">
-          <a href="#home">Bishal Aryal</a>
-        </div>
-        <ul class="nav-menu">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="hamburger" type="button" aria-label="Open menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </nav>
-
-    <main id="overlay">
+    <main>
       <section id="home" class="hero">
-        <div class="panel">
-          <p class="hero-greeting">Hello, I'm</p>
-          <h1 class="hero-name">Bishal Aryal</h1>
-          <h2 class="hero-title">Flutter Developer & Mobile App Architect</h2>
-          <p class="hero-description">
-            Specialized in building production-ready Flutter applications for iOS and Android.
-            Expert in AI integration, cloud services, and scalable mobile architecture.
-            Transforming ideas into successful apps on App Store and Play Store.
+        <span class="speck speck-a"></span>
+        <span class="speck speck-b"></span>
+        <span class="speck speck-c"></span>
+        <span class="speck speck-d"></span>
+
+        <div class="hero-copy">
+          <p class="hello">
+            <span class="deva">नमस्ते,</span> I'm <em>Bishal Aryal</em>
           </p>
-          <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">View My Work</a>
-            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-          </div>
-          <div class="hero-social">
-            <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://stackoverflow.com" target="_blank" rel="noreferrer" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
-            <a href="mailto:aryalbishal9876@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-          </div>
-          <p class="scroll-hint">Scroll to move through the studio</p>
+          <p class="meta">Flutter developer — from Syangja · <time id="clock">--:--:--</time></p>
+          <h1>
+            <span class="line-build">Building</span>
+            <span class="word" id="word">shipped</span>
+            <span class="line-tail">apps.</span>
+          </h1>
+        </div>
+
+        <div class="sun" aria-hidden="true"></div>
+        <div class="seal" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs>
+              <path id="seal-ring" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" />
+            </defs>
+            <text>
+              <textPath href="#seal-ring">SYANGJA · NEPAL · SYANGJA · NEPAL · </textPath>
+            </text>
+            <circle cx="60" cy="60" r="28" />
+            <text class="seal-mark" x="60" y="64">नेपाल</text>
+          </svg>
+        </div>
+
+        <div class="scene" aria-hidden="true">
+          <svg viewBox="0 0 1440 760" preserveAspectRatio="xMidYMax slice">
+            <path fill="#d7e3ec" d="M0 250 L160 150 L310 230 L470 90 L640 210 L800 70 L980 200 L1140 60 L1300 180 L1440 110 L1440 760 L0 760 Z" />
+            <path fill="#f7f4ee" d="M430 150 L470 90 L520 145 Z M760 130 L800 70 L845 128 Z M1100 120 L1140 60 L1190 125 Z" />
+            <path fill="#8eabbf" d="M0 340 L150 230 L320 320 L490 180 L660 310 L830 170 L1010 300 L1180 160 L1340 280 L1440 210 L1440 760 L0 760 Z" />
+            <path fill="#f4f1ea" d="M450 230 L490 180 L540 228 Z M790 230 L830 170 L880 225 Z M1140 220 L1180 160 L1230 215 Z" />
+            <path fill="#3f6278" d="M0 470 L180 330 L360 450 L540 280 L730 460 L910 300 L1100 450 L1280 320 L1440 430 L1440 760 L0 760 Z" />
+            <path fill="#f7f4ee" d="M500 340 L540 280 L590 345 Z M870 370 L910 300 L960 365 Z" />
+            <path fill="#2f5168" d="M980 470 C1040 430 1120 450 1180 420 C1240 450 1320 430 1380 460 L1380 520 C1300 490 1220 510 1160 490 C1100 520 1040 500 980 520 Z" />
+            <g transform="translate(1168 392)">
+              <ellipse cx="0" cy="78" rx="54" ry="10" fill="#e7e2d6" />
+              <rect x="-46" y="62" width="92" height="14" rx="2" fill="#f4f1ea" />
+              <rect x="-36" y="48" width="72" height="16" fill="#f7f4ee" />
+              <path d="M-32 48 C-28 18 -10 4 0 4 C10 4 28 18 32 48 Z" fill="#fbf8f2" />
+              <rect x="-7" y="16" width="14" height="12" fill="#efe8dc" />
+              <polygon points="0,-18 7,16 -7,16" fill="#f7f4ee" />
+              <circle cx="0" cy="-18" r="3.5" fill="#e23d32" />
+            </g>
+            <path d="M620 430 C760 400 920 418 1080 390" fill="none" stroke="#1c2430" stroke-width="1.2" opacity="0.35" />
+            <g fill="#3b6ea5"><rect x="640" y="404" width="16" height="22" transform="rotate(-8 648 415)" /></g>
+            <g fill="#f7f4ee"><rect x="664" y="398" width="16" height="22" transform="rotate(-6 672 409)" /></g>
+            <g fill="#e23d32"><rect x="688" y="394" width="16" height="22" transform="rotate(-4 696 405)" /></g>
+            <g fill="#2f6b4f"><rect x="712" y="390" width="16" height="22" transform="rotate(-2 720 401)" /></g>
+            <g fill="#e2b340"><rect x="736" y="388" width="16" height="22" /></g>
+            <g fill="#3b6ea5"><rect x="762" y="386" width="16" height="22" transform="rotate(2 770 397)" /></g>
+            <g fill="#f7f4ee"><rect x="788" y="384" width="16" height="22" transform="rotate(3 796 395)" /></g>
+            <g fill="#e23d32"><rect x="814" y="380" width="16" height="22" transform="rotate(4 822 391)" /></g>
+            <g fill="#2f6b4f"><rect x="840" y="376" width="16" height="22" transform="rotate(5 848 387)" /></g>
+            <g fill="#e2b340"><rect x="866" y="372" width="16" height="22" transform="rotate(6 874 383)" /></g>
+            <g fill="#3b6ea5"><rect x="892" y="368" width="16" height="22" transform="rotate(4 900 379)" /></g>
+            <g fill="#f7f4ee"><rect x="918" y="366" width="16" height="22" transform="rotate(2 926 377)" /></g>
+            <g fill="#e23d32"><rect x="944" y="366" width="16" height="22" /></g>
+            <g fill="#2f6b4f"><rect x="970" y="368" width="16" height="22" transform="rotate(-2 978 379)" /></g>
+            <g fill="#e2b340"><rect x="996" y="372" width="16" height="22" transform="rotate(-4 1004 383)" /></g>
+            <path fill="#6f93a8" d="M0 560 C240 530 480 590 720 560 C960 530 1200 590 1440 550 L1440 760 L0 760 Z" />
+            <path fill="#d7e6ee" opacity="0.35" d="M0 610 C300 590 520 640 760 615 C1040 586 1240 640 1440 610 L1440 760 L0 760 Z" />
+          </svg>
+        </div>
+
+        <div class="hero-actions">
+          <a class="pill btn" href="#contact">Get in touch</a>
+          <a class="pill pill-red" href="./assets/bishal-aryal.pdf" download>Download résumé</a>
         </div>
       </section>
 
-      <section id="about" class="about">
-        <div class="panel">
-          <h2 class="section-title">About Me</h2>
+      <section id="about" class="band about">
+        <div class="band-copy">
+          <p class="kicker">About</p>
+          <h2>I build <em>apps that ship.</em></h2>
           <p>
-            I'm a Flutter Developer and Mobile App Architect with a proven track record of building
-            production-ready applications for iOS and Android. I specialize in creating scalable,
-            user-friendly mobile applications using Flutter, with expertise in AI integration,
-            cloud services, and full-stack development.
+            I'm a Flutter developer and mobile app architect. I take an idea through design,
+            development, and a real App Store or Play Store launch — for clients in the UK,
+            Australia, and Nepal.
           </p>
           <p>
-            My expertise includes Flutter mobile development (iOS & Android), AI/ML integration
-            (OpenAI Whisper), backend API development, cloud storage optimization, and App Store/Play Store
-            deployment. I've successfully launched 5+ apps with real users, working with international
-            clients from UK and Australia.
+            The useful part is usually the quiet work: maps, accounts, cloud storage, payments,
+            and AI features such as speech-to-text. The apps are in people's hands, not stuck as demos.
           </p>
-          <p>
-            <strong>What sets me apart:</strong> All my apps are production-level, not demos. I take
-            projects from idea → development → launch → store deployment, with experience in AI integration,
-            payments, cloud storage, and scalable architecture.
-          </p>
-          <div class="about-info">
-            <div class="info-item"><span>Name</span><span>Bishal Aryal</span></div>
-            <div class="info-item"><span>Email</span><a href="mailto:aryalbishal9876@gmail.com">aryalbishal9876@gmail.com</a></div>
-            <div class="info-item"><span>Phone</span><a href="tel:9864434255">+977 9864434255</a></div>
-            <div class="info-item"><span>Location</span><span>Syangja, Nepal</span></div>
-          </div>
-          <a href="./assets/bishal-aryal.pdf" download class="btn btn-primary">Download CV</a>
-        </div>
-      </section>
-
-      <section id="projects" class="projects">
-        <div class="section-head panel">
-          <h2 class="section-title">Best Flutter Apps / Projects I've Worked On</h2>
-        </div>
-
-        <article id="project-voicestamp" class="project-beat">
-          <div class="panel project-card">
-            <img src="./assets/logos/voicestamp.png" alt="VoiceStamp App" />
-            <h3>VoiceStamp – AI Voice & Documentation App (iOS)</h3>
-            <p class="project-role"><strong>Role:</strong> Flutter Developer & System Architect</p>
-            <p>
-              Developed core Flutter application features and designed a custom .vst file format to store
-              audio, images, drawings, and metadata together. Integrated OpenAI Whisper API for AI-based
-              speech-to-text transcription. Implemented secure cloud storage and optimized media handling.
-            </p>
-            <p><strong>Outcome:</strong> Successfully launched on Apple App Store. Delivered a unique AI-driven documentation system for professional note-taking.</p>
-            <div class="project-tech">
-              <span>Flutter</span><span>iOS</span><span>OpenAI Whisper</span><span>Cloud Storage</span>
-            </div>
-            <div class="project-links">
-              <a href="https://apps.apple.com/us/app/voice-stamps/id6746640716" target="_blank" rel="noreferrer">App Store</a>
-            </div>
-          </div>
-        </article>
-
-        <article id="project-whynew" class="project-beat">
-          <div class="panel project-card">
-            <img src="./assets/logos/whynew.png" alt="WhyNew App" />
-            <h3>WhyNew – Second-Hand Mobile Bidding Platform (Android)</h3>
-            <p class="project-role"><strong>Role:</strong> Flutter Mobile Developer</p>
-            <p>
-              Built major parts of the Flutter front-end. Integrated APIs for product listings, bidding,
-              and user accounts. Ensured smooth UI/UX for real-time bidding workflows.
-            </p>
-            <p><strong>Outcome:</strong> Published on Google Play Store. Actively used platform enabling refurbished phone buying & selling.</p>
-            <div class="project-tech">
-              <span>Flutter</span><span>Android</span><span>Real-time Bidding</span><span>API Integration</span>
-            </div>
-            <div class="project-links">
-              <a href="https://play.google.com/store/apps/details?id=com.whynew.ms" target="_blank" rel="noreferrer">Play Store</a>
-            </div>
-          </div>
-        </article>
-
-        <article id="project-esawari" class="project-beat">
-          <div class="panel project-card">
-            <img src="./assets/logos/e-sawari.png" alt="eSawari App" />
-            <h3>eSawari – Ride Sharing Application</h3>
-            <p class="project-role"><strong>Role:</strong> Flutter Developer</p>
-            <p>
-              Developed core ride booking and user flow. Integrated Google Maps for real-time location
-              and navigation. Connected Flutter app with backend APIs and Firebase services.
-            </p>
-            <p><strong>Outcome:</strong> Live ride-sharing app serving real users. Delivered a production-ready transport solution.</p>
-            <div class="project-tech">
-              <span>Flutter</span><span>Google Maps</span><span>Firebase</span><span>Real-time Location</span>
-            </div>
-            <div class="project-links">
-              <a href="https://play.google.com/store/apps/details?id=com.ridenp" target="_blank" rel="noreferrer">Play Store</a>
-            </div>
-          </div>
-        </article>
-
-        <article id="project-tejbi" class="project-beat">
-          <div class="panel project-card">
-            <img src="./assets/logos/tejbi.png" alt="Tejbi travel platform" />
-            <h3>Tejbi – Nepal's Smart Travel Platform</h3>
-            <p class="project-role"><strong>Role:</strong> Full-Stack Flutter Developer</p>
-            <p>
-              Built the product experience for Tejbi, Nepal's smart travel platform for
-              bus tickets and hotel bookings. Designed booking flows, route listings, and hotel search so
-              passengers can plan Kathmandu–Pokhara and other trips from one place.
-            </p>
-            <p><strong>Outcome:</strong> Live production platform at tejbi.com covering bus and hotel booking for real travelers in Nepal.</p>
-            <div class="project-tech">
-              <span>Flutter</span><span>Bus Booking</span><span>Hotels</span><span>Full-Stack</span>
-            </div>
-            <div class="project-links">
-              <a href="https://tejbi.com/" target="_blank" rel="noreferrer">Website</a>
-            </div>
-          </div>
-        </article>
-
-        <article id="project-guitarhub" class="project-beat">
-          <div class="panel project-card">
-            <img src="./assets/logos/guitarhub.png" alt="GuitarHub App" />
-            <h3>GuitarHub – Music Learning App (Own Product)</h3>
-            <p class="project-role"><strong>Role:</strong> Flutter Developer</p>
-            <p>
-              Developed music learning and community features. Integrated Firebase for authentication
-              and data storage. Designed intuitive UI for learners.
-            </p>
-            <p><strong>Outcome:</strong> Published on Google Play Store. Built an engaged niche user base.</p>
-            <div class="project-tech">
-              <span>Flutter</span><span>Firebase</span><span>Community Features</span><span>Music Learning</span>
-            </div>
-            <div class="project-links">
-              <a href="https://play.google.com/store/apps/details?id=com.guitarhub.guitarhub" target="_blank" rel="noreferrer">Play Store</a>
-            </div>
-          </div>
-        </article>
-
-        <div class="panel projects-note">
-          <h3>Why I'm Proud of These Projects</h3>
-          <ul>
-            <li>All apps are <strong>production-level, not demos</strong></li>
-            <li>Experience with <strong>AI integration, payments, cloud storage, and scalable architecture</strong></li>
-            <li>Worked with <strong>international clients (UK & Australia)</strong> and delivered secure, maintainable systems</li>
-            <li>Proven ability to take projects from <strong>idea → launch → store deployment</strong></li>
+          <ul class="cares">
+            <li>Production apps, not prototypes</li>
+            <li>One Flutter codebase for iOS and Android</li>
+            <li>From the first screen to the store listing</li>
+            <li>AI when the product actually needs it</li>
+            <li>Code the next developer can keep</li>
           </ul>
         </div>
+        <aside class="about-side">
+          <figure class="portrait">
+            <img src="./assets/portrait.png" alt="Bishal Aryal sitting by a river in Nepal" />
+          </figure>
+          <div class="place">
+            <p class="place-kicker">Home</p>
+            <p class="place-np">स्याङ्जा, नेपाल</p>
+            <p class="place-en">Syangja, Nepal</p>
+          </div>
+          <div class="stats">
+            <div>
+              <strong>5+</strong>
+              <span>apps launched</span>
+            </div>
+            <div>
+              <strong>2</strong>
+              <span>stores, live</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="projects" class="band projects">
+        <p class="kicker">Projects</p>
+        <h2>On the <em>stores.</em></h2>
+
+        <article class="project">
+          <img src="./assets/logos/voicestamp.png" alt="" />
+          <div>
+            <p class="eyebrow">App Store · iOS</p>
+            <h3>VoiceStamp <em>notes you can hear</em></h3>
+            <p>
+              Core Flutter features for an AI documentation app, plus a custom .vst format that keeps
+              audio, images, drawings, and metadata together. Speech-to-text runs through OpenAI Whisper,
+              with secure cloud storage for the media.
+            </p>
+            <p class="outcome">Launched on the Apple App Store.</p>
+            <div class="project-foot">
+              <p class="tech">Flutter · iOS · Whisper · Cloud storage</p>
+              <a href="https://apps.apple.com/us/app/voice-stamps/id6746640716" target="_blank" rel="noreferrer">App Store ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="./assets/logos/whynew.png" alt="" />
+          <div>
+            <p class="eyebrow">Play Store · Android</p>
+            <h3>WhyNew <em>bidding for a better phone</em></h3>
+            <p>
+              A large part of the Flutter front-end for a second-hand phone marketplace: listings,
+              bidding, and accounts, with a flow that stays clear while the auction is moving.
+            </p>
+            <p class="outcome">Published on Google Play and used for refurbished phone sales.</p>
+            <div class="project-foot">
+              <p class="tech">Flutter · Android · Bidding · APIs</p>
+              <a href="https://play.google.com/store/apps/details?id=com.whynew.ms" target="_blank" rel="noreferrer">Play Store ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="./assets/logos/e-sawari.png" alt="" />
+          <div>
+            <p class="eyebrow">Ride sharing</p>
+            <h3>eSawari <em>a ride, when you need it</em></h3>
+            <p>
+              Ride booking and the main user flow, with Google Maps for live location and navigation,
+              wired to backend APIs and Firebase.
+            </p>
+            <p class="outcome">A live transport app with real riders.</p>
+            <div class="project-foot">
+              <p class="tech">Flutter · Google Maps · Firebase</p>
+              <a href="https://play.google.com/store/apps/details?id=com.ridenp" target="_blank" rel="noreferrer">Play Store ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="./assets/logos/tejbi.png" alt="" />
+          <div>
+            <p class="eyebrow">Travel · Nepal</p>
+            <h3>Tejbi <em>bus, hotel, one place</em></h3>
+            <p>
+              Booking flows for Nepal's travel platform: bus tickets, route listings, and hotel search,
+              so a Kathmandu–Pokhara trip can be planned without jumping between apps.
+            </p>
+            <p class="outcome">Live at tejbi.com for travelers in Nepal.</p>
+            <div class="project-foot">
+              <p class="tech">Flutter · Bus booking · Hotels</p>
+              <a href="https://tejbi.com/" target="_blank" rel="noreferrer">Website ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="./assets/logos/guitarhub.png" alt="" />
+          <div>
+            <p class="eyebrow">Own product</p>
+            <h3>GuitarHub <em>learn the next song</em></h3>
+            <p>
+              A music-learning app with community features, Firebase authentication, and a layout meant
+              for people who are still finding the fretboard.
+            </p>
+            <p class="outcome">Published on Google Play.</p>
+            <div class="project-foot">
+              <p class="tech">Flutter · Firebase · Community</p>
+              <a href="https://play.google.com/store/apps/details?id=com.guitarhub.guitarhub" target="_blank" rel="noreferrer">Play Store ↗</a>
+            </div>
+          </div>
+        </article>
       </section>
 
       <section id="skills" class="skills">
-        <div class="panel">
-          <h2 class="section-title">Skills & Technologies</h2>
-          <div class="skills-category">
-            <h3>AI Model Training & Feature Engineering</h3>
-            <div class="skills-tags">
-              <span>Machine Learning</span><span>Feature Engineering</span><span>Model Training</span>
-              <span>OpenAI Whisper</span><span>AI Integration</span><span>Data Processing</span>
-            </div>
-          </div>
-          <div class="skills-category">
-            <h3>Mobile Development (Flutter Specialist)</h3>
-            <div class="skills-tags">
-              <span>Flutter</span><span>Dart</span><span>Android</span><span>iOS</span>
-              <span>App Store</span><span>Play Store</span><span>Google Maps</span><span>Firebase</span>
-            </div>
-          </div>
-          <div class="skills-category">
-            <h3>Backend, AI & Services</h3>
-            <div class="skills-tags">
-              <span>Node.js</span><span>FastAPI</span><span>Laravel</span><span>PHP</span>
-              <span>Supabase</span><span>Amazon S3</span><span>OpenAI Whisper</span>
-              <span>AI Integration</span><span>Cloud Storage</span>
-            </div>
+        <p class="kicker kicker-center">Skills</p>
+        <h2 class="center-title">The tools <em>I keep open.</em></h2>
+        <div class="marquee" aria-label="Skills">
+          <div class="marquee-track">
+            <span>Flutter</span><span>Dart</span><span>iOS</span><span>Android</span>
+            <span>Firebase</span><span>Google Maps</span><span>Node.js</span><span>FastAPI</span>
+            <span>Laravel</span><span>Supabase</span><span>Amazon S3</span><span>OpenAI Whisper</span>
+            <span>App Store</span><span>Play Store</span>
+            <span>Flutter</span><span>Dart</span><span>iOS</span><span>Android</span>
+            <span>Firebase</span><span>Google Maps</span><span>Node.js</span><span>FastAPI</span>
+            <span>Laravel</span><span>Supabase</span><span>Amazon S3</span><span>OpenAI Whisper</span>
+            <span>App Store</span><span>Play Store</span>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="contact">
-        <div class="panel">
-          <h2 class="section-title">Get In Touch</h2>
-          <p>
-            I'm always open to discussing new projects, creative ideas, or opportunities
-            to be part of your visions. Feel free to reach out!
-          </p>
-          <div class="contact-details">
-            <a class="contact-item" href="mailto:aryalbishal9876@gmail.com">
-              <i class="fas fa-envelope"></i>
-              <div>
-                <h4>Email</h4>
-                <span>aryalbishal9876@gmail.com</span>
-              </div>
-            </a>
-            <a class="contact-item" href="tel:9864434255">
-              <i class="fas fa-phone"></i>
-              <div>
-                <h4>Phone</h4>
-                <span>+977 9864434255</span>
-              </div>
-            </a>
-            <div class="contact-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <h4>Location</h4>
-                <span>Syangja, Nepal</span>
-              </div>
-            </div>
-          </div>
-          <div class="hero-social">
-            <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://stackoverflow.com" target="_blank" rel="noreferrer" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
-          </div>
+      <section id="contact" class="band contact">
+        <p class="kicker">Contact</p>
+        <h2>Let's build <em>the next one.</em></h2>
+        <p class="contact-lead">
+          New apps, a store launch, or a product that needs a Flutter developer who will stay
+          through release. Write anytime.
+        </p>
+        <div class="contact-row">
+          <a class="pill pill-red" href="mailto:aryalbishal9876@gmail.com">aryalbishal9876@gmail.com</a>
+          <a class="pill" href="tel:+9779864434255">+977 9864434255</a>
         </div>
+        <p class="where">Syangja, Nepal</p>
       </section>
-
-      <footer class="footer">
-        <p>&copy; 2026 Bishal Aryal. All rights reserved.</p>
-        <p>Designed & Developed with <i class="fas fa-heart"></i> by Bishal Aryal</p>
-      </footer>
     </main>
 
-    <script>
-      setTimeout(function () {
-        document.body.classList.add('is-ready');
-        var loader = document.querySelector('.loader');
-        if (loader) loader.classList.add('is-hidden');
-      }, 8000);
-    </script>
+    <footer class="footer">
+      <p>© 2026 Bishal Aryal</p>
+      <nav>
+        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://stackoverflow.com" target="_blank" rel="noreferrer">Stack Overflow</a>
+        <a href="mailto:aryalbishal9876@gmail.com">Email</a>
+      </nav>
+    </footer>
+
     <script type="module" src="./docs/assets/app.js"></script>
   </body>
 </html>
